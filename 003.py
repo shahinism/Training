@@ -8,16 +8,16 @@ What is the largest prime factor of the number 600851475143?
 """
 
 
-def isPrime(number):
-    for n in range(2, number - 1):
-        if number % n == 0:
-            return False
-    return True
+def bpf(n):
+    """Definition can be found
+    http://stackoverflow.com/questions/15347174/python-finding-prime-factors
+    """
+    i = 2
+    while i * i < n:
+        while n % i == 0:
+            n = n / i
+        i = i + 1
+    return n
 
 
-def primeFactor(number):
-    for n in range(2, number):
-        if number % n == 0 and isPrime(n):
-            print n
-
-primeFactor(600851475143)
+print bpf(600851475143)
