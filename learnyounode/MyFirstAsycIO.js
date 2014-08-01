@@ -42,3 +42,5 @@ fs.readFile(file, function(err, content){
 });
 
 // Resource: http://stackoverflow.com/questions/21963858/how-to-read-file-to-variable-in-nodejs
+// Resource: http://docs.nodejitsu.com/articles/getting-started/control-flow/what-are-callbacks
+// Resource: http://www.hacksparrow.com/node-js-async-programming.html
