@@ -41,5 +41,4 @@ fs.readFile(file, function(err, content){
     console.log(content.toString().split('\n').length - 1)
 });
 
-
-
+// Resource: http://stackoverflow.com/questions/21963858/how-to-read-file-to-variable-in-nodejs
