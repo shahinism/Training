@@ -16,16 +16,6 @@ hundred natural numbers and the square of the sum.
 """
 
 
-def square(number):
-    return number ** 2
-
-
-sumOfSquares = 0
-sumOfNumbers = 0
-for i in range(1, 101):
-    sumOfSquares += square(i)
-    sumOfNumbers += i
-
-
-print square(sumOfNumbers) - sumOfSquares
-
+r = xrange(1, 101)
+a = sum(r)
+print a * a - sum(i*i for i in r)
